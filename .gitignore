@@ -1,0 +1,20 @@
+# Numerous always-ignore extensions
+*.bak
+*.diff
+*.err
+*.exe
+*.log
+*.orig
+*.rej
+*.sass-cache
+*.swo
+*.swp
+*.vi
+*~
+
+# Folders to ignore
+.git
+
+# Node.JS
+node_modules
+package-lock.json
