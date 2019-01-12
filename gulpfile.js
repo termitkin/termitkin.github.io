@@ -49,9 +49,6 @@ gulp.task('browser-sync', () => {
         server: "./"
     });
 
-    gulp.src('./src/pages/**/*')
-      .pipe(gulp.dest('./dist/pages'))
-
     gulp.watch('src/css/*.css', gulp.series('css'));
     gulp.watch('src/index.html', gulp.series('html'));
     gulp.watch('src/js/**/*.js', gulp.series('js'));
