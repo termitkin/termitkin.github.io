@@ -44,7 +44,7 @@ gulp.task('img', () =>
     .pipe(browserSync.reload({stream:true}))
 );
 
-gulp.task('browser-sync', () => {
+gulp.task('w', () => {
     browserSync.init({
         server: "./"
     });
