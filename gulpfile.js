@@ -18,7 +18,7 @@ gulp.task('css', () =>
 gulp.task('html', () =>
   gulp.src('./src/index.html')
     .pipe(htmlmin({
-	    		collapseWhitespace: true,
+	    		collapseWhitespace: false,
 	    		minifyCSS: true,
 	    		minifyJS: true,
 	    		removeComments: true,
@@ -38,7 +38,7 @@ gulp.task('js', () =>
 )
 
 gulp.task('img', () =>
-  gulp.src(['./src/images/**/*.jpg', './src/images/**/*.jpeg', './src/images/**/*.png', './src/images/**/*.webp'])
+  gulp.src(['./src/images/**/*.jpg', './src/images/**/*.jpeg', './src/images/**/*.png'])
     .pipe(newer('./dist/images'))
     .pipe(gulp.dest('./dist/images'))
     .pipe(browserSync.reload({stream:true}))
@@ -52,5 +52,5 @@ gulp.task('browser-sync', () => {
     gulp.watch('src/css/*.css', gulp.series('css'));
     gulp.watch('src/index.html', gulp.series('html'));
     gulp.watch('src/js/**/*.js', gulp.series('js'));
-    gulp.watch(['./src/images/**/*.jpg', './src/images/**/*.jpeg', './src/images/**/*.png', './src/images/**/*.webp'], gulp.series('img'));
+    gulp.watch(['./src/images/**/*.jpg', './src/images/**/*.jpeg', './src/images/**/*.png'], gulp.series('img'));
 });
