@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "description": "Portfolio",
   "main": "index.js",
-  "scripts": {
-    "push-dist": "git subtree push --prefix dist origin gh-pages"
-  },
   "author": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/termitkin/termitkin.github.io.git"
+  },
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^9.4.3",
