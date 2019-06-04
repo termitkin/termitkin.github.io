@@ -1,7 +1,6 @@
 const gulp         = require('gulp'),
       autoprefixer = require('autoprefixer'),
       browserSync  = require('browser-sync').create(),
-      sorting      = require('postcss-sorting'),
       htmlmin 		 = require('gulp-htmlmin'),
       concat       = require('gulp-concat'),
       postcss      = require('gulp-postcss'),
