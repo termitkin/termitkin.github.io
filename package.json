@@ -8,6 +8,9 @@
     "type": "git",
     "url": "https://github.com/termitkin/termitkin.github.io.git"
   },
+  "scripts": {
+    "start": "gulp w"
+  },
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^9.4.3",
